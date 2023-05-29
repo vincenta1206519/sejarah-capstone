@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="22dp"
+        android:src="@drawable/ic_person_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintStart_toEndOf="@id/ivProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_setting"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_setting"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/setting" />
+
+    <TextView
+        android:id="@+id/sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sales"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/rv_dummy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Product"
+        app:layout_constraintBottom_toBottomOf="@+id/sales"
+        app:layout_constraintStart_toEndOf="@+id/sales"
+        app:layout_constraintTop_toTopOf="@+id/sales" />
+
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/product"
+        app:layout_constraintStart_toEndOf="@+id/product"
+        app:layout_constraintTop_toTopOf="@+id/product" />
+
+    <TextView
+        android:id="@+id/recom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Re-stock"
+        app:layout_constraintBottom_toBottomOf="@+id/stock"
+        app:layout_constraintStart_toEndOf="@+id/stock"
+        app:layout_constraintTop_toTopOf="@+id/stock" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dummy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sales"
+        tools:listitem="@layout/item_dummy"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
