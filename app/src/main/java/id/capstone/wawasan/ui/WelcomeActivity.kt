@@ -17,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.welcomeBtn.setOnClickListener {
-            val intent = Intent(this, ConfigureHostActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }

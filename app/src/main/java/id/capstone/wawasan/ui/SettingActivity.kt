@@ -60,6 +60,11 @@ class SettingActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListen
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnConfigure.setOnClickListener {
+            val intent = Intent(this, ConfigureHostActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onProfileUpdated(name: String?, photoUrl: Uri?) {

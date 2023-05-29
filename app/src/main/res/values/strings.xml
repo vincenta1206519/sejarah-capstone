@@ -34,7 +34,8 @@
     <string name="new_password">New Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="change">Change</string>
-    
+    <string name="username">Username</string>
+
     <string-array name="data_sales">
         <item>Unilever</item>
         <item>Nestle</item>

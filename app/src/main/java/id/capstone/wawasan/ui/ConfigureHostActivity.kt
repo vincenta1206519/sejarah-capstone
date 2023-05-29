@@ -16,18 +16,22 @@ class ConfigureHostActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnNext.setOnClickListener {
+            val username = binding.etUsername.text.toString()
+            val pass = binding.etPassword.text.toString()
             val host = binding.etHost.text.toString()
             val port = binding.etPort.text.toString()
 
-            if (host.isNotEmpty() && port.isNotEmpty()) {
+            if (username.isNotEmpty() && pass.isNotEmpty() && host.isNotEmpty() && port.isNotEmpty()) {
+                val savedUsername = username
+                val savedPass = pass
                 val savedHost = host
                 val savedPort = port
             }
-
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
         }
 
-
+        binding.backBtn.setOnClickListener {
+            val intent = Intent(this, SettingActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

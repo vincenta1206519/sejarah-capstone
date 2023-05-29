@@ -79,6 +79,17 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
+        android:id="@+id/btn_configure"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="@string/configure_host"
+        app:layout_constraintTop_toBottomOf="@id/btn_changepass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
         android:id="@+id/btn_logout"
         android:layout_width="320dp"
         android:layout_height="50dp"
@@ -88,7 +99,7 @@
         android:paddingEnd="135dp"
         android:backgroundTint="@color/dark_green"
         android:text="@string/logout"
-        app:layout_constraintTop_toBottomOf="@id/btn_changepass"
+        app:layout_constraintTop_toBottomOf="@id/btn_configure"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

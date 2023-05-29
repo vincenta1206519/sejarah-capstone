@@ -39,56 +39,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/setting" />
 
-    <TextView
-        android:id="@+id/sales"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sales"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/rv_dummy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
-
-    <TextView
-        android:id="@+id/product"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:text="Product"
-        app:layout_constraintBottom_toBottomOf="@+id/sales"
-        app:layout_constraintStart_toEndOf="@+id/sales"
-        app:layout_constraintTop_toTopOf="@+id/sales" />
-
-    <TextView
-        android:id="@+id/stock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stock"
-        android:layout_marginStart="40dp"
-        app:layout_constraintBottom_toBottomOf="@+id/product"
-        app:layout_constraintStart_toEndOf="@+id/product"
-        app:layout_constraintTop_toTopOf="@+id/product" />
-
-    <TextView
-        android:id="@+id/recom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="Re-stock"
-        app:layout_constraintBottom_toBottomOf="@+id/stock"
-        app:layout_constraintStart_toEndOf="@+id/stock"
-        app:layout_constraintTop_toTopOf="@+id/stock" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_dummy"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sales"
-        tools:listitem="@layout/item_dummy"/>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_dummy"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/sales"-->
+<!--        tools:listitem="@layout/item_dummy"/>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

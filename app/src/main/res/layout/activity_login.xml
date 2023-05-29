@@ -88,14 +88,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ImageView
-        android:id="@+id/back_btn"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_arrow_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/back_page" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
