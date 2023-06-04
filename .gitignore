@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
+/ml_modeling/supplier_schedule.csv
