@@ -1,21 +1,19 @@
 package id.capstone.wawasan.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import id.capstone.wawasan.R
-import id.capstone.wawasan.data.Dummy
 import id.capstone.wawasan.databinding.ItemDummyBinding
+import id.capstone.wawasan.retrofit.DataItem
 
-class DummyAdapter(private val list: ArrayList<Dummy>) : RecyclerView.Adapter<DummyAdapter.DummyViewHolder>() {
+class DataAdapter(private val list: List<DataItem>) : RecyclerView.Adapter<DataAdapter.DummyViewHolder>() {
     class DummyViewHolder(private val binding: ItemDummyBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(dummy: Dummy) {
+        fun bind(dummy: DataItem) {
             with(binding) {
-                tvSales.text = dummy.sales
-                tvProduct.text = dummy.product
-                tvStock.text = dummy.stock
-                tvRcstock.text = dummy.recStock
+                tvSales.text = dummy.supplier
+                tvProduct.text = dummy.nama
+                tvStock.text = dummy.toko
+                tvRcstock.text = dummy.gudang
             }
         }
     }

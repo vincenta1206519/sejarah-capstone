@@ -55,9 +55,5 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        binding.backBtn.setOnClickListener {
-            val intent = Intent(this, ConfigureHostActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

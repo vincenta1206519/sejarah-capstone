@@ -34,28 +34,5 @@
     <string name="new_password">New Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="change">Change</string>
-    
-    <string-array name="data_sales">
-        <item>Unilever</item>
-        <item>Nestle</item>
-        <item>Sosro</item>
-    </string-array>
-
-    <string-array name="data_product">
-        <item>Lifebuoy</item>
-        <item>Dancow</item>
-        <item>Teh Botol</item>
-    </string-array>
-
-    <string-array name="data_stock">
-        <item>17</item>
-        <item>32</item>
-        <item>21</item>
-    </string-array>
-
-    <string-array name="data_recstock">
-        <item>21</item>
-        <item>14</item>
-        <item>25</item>
-    </string-array>
+    <string name="username">Username</string>
 </resources>
