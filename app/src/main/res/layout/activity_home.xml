@@ -12,7 +12,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="22dp"
         android:layout_marginStart="22dp"
-        android:src="@drawable/ic_person_black"
+        android:src="@drawable/icons_person"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,20 +33,56 @@
         android:id="@+id/ic_setting"
         android:layout_width="25dp"
         android:layout_height="25dp"
+        android:stateListAnimator="@animator/button_press_anim"
         android:src="@drawable/ic_setting"
         android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/text_name"
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/setting" />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp"
+        android:stretchColumns="1,2,3,4">
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rv_dummy"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/sales"-->
-<!--        tools:listitem="@layout/item_dummy"/>-->
+        <TableRow>
+            <TextView
+                android:text="Sales"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <TextView
+                android:text="Product"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <TextView
+                android:text="Stock"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <TextView
+                android:text="Needed"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_column="1"/>
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_dummy"/>
+
+    </TableLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

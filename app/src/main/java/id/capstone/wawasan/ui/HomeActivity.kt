@@ -4,15 +4,20 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
+import id.capstone.wawasan.adapter.DataAdapter
 import id.capstone.wawasan.databinding.ActivityHomeBinding
+import id.capstone.wawasan.retrofit.DataResponse
 
 class HomeActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListener {
 
     private lateinit var binding: ActivityHomeBinding
     private lateinit var firebaseAuth: FirebaseAuth
-//    private val list = ArrayList<Dummy>()
+    private val homeViewModel by viewModels<HomeViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +34,8 @@ class HomeActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListener 
             if (user.photoUrl != null) {
                 Picasso.get().load(user.photoUrl).into(binding.ivProfile)
             }
+        } else {
+            binding.textName.text = "Anonymous"
         }
 
         binding.icSetting.setOnClickListener {
@@ -36,11 +43,13 @@ class HomeActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListener 
             startActivity(intent)
         }
 
-//        binding.rvDummy.setHasFixedSize(true)
-//        list.addAll(getListDummy())
-//        binding.rvDummy.layoutManager = LinearLayoutManager(this)
-//        val dummyAdapter = DummyAdapter(list)
-//        binding.rvDummy.adapter = dummyAdapter
+        val layoutManager = LinearLayoutManager(this)
+        binding.rv.layoutManager = layoutManager
+        val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
+        binding.rv.addItemDecoration(itemDecoration)
+
+
+        getListData()
     }
 
     override fun onProfileUpdated(name: String?, photoUrl: Uri?) {
@@ -59,24 +68,15 @@ class HomeActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListener 
         }
     }
 
-//    private fun getListDummy(): ArrayList<Dummy> {
-//        val sales = resources.getStringArray(R.array.data_sales)
-//        val product = resources.getStringArray(R.array.data_product)
-//        val stock = resources.getStringArray(R.array.data_stock)
-//        val recStock = resources.getStringArray(R.array.data_recstock)
-//
-//        val listDummy = ArrayList<Dummy>()
-//        for (i in sales.indices) {
-//            val dummy = Dummy(
-//                sales[i],
-//                product[i],
-//                stock[i],
-//                recStock[i]
-//            )
-//            listDummy.add(dummy)
-//        }
-//        return listDummy
-//    }
+    private fun getListData() {
+        homeViewModel.data.observe(this) { dataResponse ->
+            if (dataResponse != null) {
+                val dataItems = dataResponse.data
+                val adapter = DataAdapter(dataItems)
+                binding.rv.adapter = adapter
+            }
+        }
+    }
 
     override fun onResume() {
         super.onResume()

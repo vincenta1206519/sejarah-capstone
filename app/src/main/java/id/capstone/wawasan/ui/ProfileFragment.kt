@@ -50,7 +50,7 @@ class ProfileFragment : Fragment() {
 
         binding.etName.setText(user?.displayName)
 
-        binding.ivProfile.setOnClickListener {
+        binding.btnProfile.setOnClickListener {
             showImagePickerDialog()
         }
 

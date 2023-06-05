@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
 import id.capstone.wawasan.R
@@ -26,7 +27,6 @@ class SettingActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListen
 
         if (user != null) {
             binding.tvName.text = user.displayName
-
             binding.tvEmail.text = user.email
 
             if (user.photoUrl != null) {
@@ -42,7 +42,7 @@ class SettingActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListen
             val profileFragment = ProfileFragment()
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.container, profileFragment)
+                .replace(R.id.container, profileFragment)
                 .addToBackStack(null)
                 .commit()
         }
@@ -51,7 +51,7 @@ class SettingActivity : AppCompatActivity(), ProfileFragment.ProfileUpdateListen
             val changeProfileFragment = ChangePasswordFragment()
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.container, changeProfileFragment)
+                .replace(R.id.container, changeProfileFragment)
                 .addToBackStack(null)
                 .commit()
         }
