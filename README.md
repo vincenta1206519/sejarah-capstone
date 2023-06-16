@@ -29,18 +29,13 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 
 # UI
 
-1. Login
+1. 
 
-    ![Screenshot 2023-06-16 005107](https://github.com/vincenta1206519/backend-API-hapi/assets/113355550/b2d00b0f-98a9-4a98-b808-fb8fa30b7e68)
+   ![design](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/ea8ad938-384d-491d-a4ff-5febdf71104d)
 
-2. Supplier
+2. 
 
-    ![a1](https://github.com/vincenta1206519/backend-API-hapi/assets/113355550/4f1a82a9-84a1-46f3-a5f2-5b84e1ff282f)
-
-3. Profile
-
-    ![Screenshot 2023-06-16 005125](https://github.com/vincenta1206519/backend-API-hapi/assets/113355550/b612abca-f729-4c7c-87ec-8a59198067dc)
-
+    ![Untitled design](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/354b5c6a-5610-40cf-bfdc-21eb1fe8d5db)
 
 
 
