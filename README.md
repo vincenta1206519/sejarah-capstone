@@ -12,11 +12,11 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
  - Najib Farhan Abdillah      | C163DSX1654 
 
 # Our Git Link :
- - Back-End API (https://github.com/vincenta1206519/backend-API-hapi)
+ - [Back-End API](https://github.com/vincenta1206519/backend-API-hapi)
 
- - Machine Learning Model [ML] 
+ - Machine Learning Model
 
- - App [MD]
+ - [APP| MD](https://github.com/amdryankz/capstone-wawasan-md)
 
 
 # UI
@@ -36,7 +36,7 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 
 
 
-# iNFRASCTRUCTURE
+# INFRASCTRUCTURE
 
 ![fe105dac-d5a7-4ef9-b4f5-152c36c45f46](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/f079ef77-a92d-4c02-8908-c1ebcf1edf34)
 
