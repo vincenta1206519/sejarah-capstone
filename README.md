@@ -2,9 +2,7 @@
 
 Introducing Wawasan, your ultimate demand forecasting app that revolutionizes the way you analyze and predict consumer trends. With its cutting-edge technology and user-friendly interface, Wawasan empowers businesses of all sizes to make accurate and informed decisions to optimize their inventory management, production planning, and sales strategies.
 
-
-
-# Team Member
+# Team Member (C23-PR501)
 
  - Ahmad Chairiansyah         | A353DSX1427
  - Steven Manuel Angkasaputra | M038DSX0016 
@@ -14,11 +12,11 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
  - Najib Farhan Abdillah      | C163DSX1654 
 
 # Our Git Link :
- - [CC](https://github.com/vincenta1206519/backend-API-hapi)
+ - Back-End API (https://github.com/vincenta1206519/backend-API-hapi)
 
- - [ML]
+ - Machine Learning Model [ML] 
 
- - [MD]
+ - App [MD]
 
 
 # UI
@@ -46,14 +44,14 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 
 # **NOTE**
 
-**if you want to try and use our app use this credentials (no create acc)**
+**if you want to try and use our app use this credentials (no create an account feature)**
 
 ```
 user@example.com
 password
 ```
 
-Try using this credentials to configure host because the app is still on development
+You can use this credentials to configure your host because the app is still on development
 
 ```
 {
