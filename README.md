@@ -33,9 +33,8 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 
    ![design](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/ea8ad938-384d-491d-a4ff-5febdf71104d)
 
-2. 
 
-    ![Untitled design](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/354b5c6a-5610-40cf-bfdc-21eb1fe8d5db)
+   ![Untitled design](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/354b5c6a-5610-40cf-bfdc-21eb1fe8d5db)
 
 
 
