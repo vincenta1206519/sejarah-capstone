@@ -9,7 +9,15 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
  - Muhammad Arief             | M307DSX0249 
  - Khairul Umam Albi          | M353DSX0516 
  - Vincent Tanaka             | C163DSX1651 
- - Najib Farhan Abdillah      | C163DSX1654 
+ - Najib Farhan Abdillah      | C163DSX1654
+
+# Features :
+ - Authentication (Firebase)
+ - Logout
+ - Change Password
+ - Configure Host (Connect to Database)
+ - List all supplier names
+ - Predict the needed product quantity
 
 # Our Git Link :
  - [Back-End API](https://github.com/vincenta1206519/backend-API-hapi)
@@ -50,6 +58,7 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 user@example.com
 password
 ```
+**please dont use the change password feature so that everyone can test the app
 
 You can use this credentials to configure your host because the app is still on development
 
