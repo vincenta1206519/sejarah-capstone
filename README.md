@@ -22,7 +22,7 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 # Our Git Link :
  - [Back-End API](https://github.com/vincenta1206519/backend-API-hapi)
 
- - Machine Learning Model
+ - [Machine Learning Model](https://github.com/kassumanete/wawasan-capstone-ml)
 
  - [APP| MD](https://github.com/amdryankz/capstone-wawasan-md)
 
