@@ -24,7 +24,7 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 
  - [Machine Learning Model](https://github.com/kassumanete/wawasan-capstone-ml)
 
- - [APP| MD](https://github.com/amdryankz/capstone-wawasan-md)
+ - [APP | MD](https://github.com/amdryankz/capstone-wawasan-md)
 
 
 # UI
