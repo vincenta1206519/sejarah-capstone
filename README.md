@@ -40,7 +40,7 @@ Introducing Wawasan, your ultimate demand forecasting app that revolutionizes th
 
 # INFRASCTRUCTURE
 
-![fe105dac-d5a7-4ef9-b4f5-152c36c45f46](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/f079ef77-a92d-4c02-8908-c1ebcf1edf34)
+![image](https://github.com/vincenta1206519/wawasan-capstone/assets/113355550/0c344372-f71d-442e-abbb-716c63145cfb)
 
 
 
